@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+.home-content {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-content .text-1 {
+  line-height: 4rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.home-content .text-1 span::after {
+  content: " Yashita";
+}
+
+.home-content .text-2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #000;
+}
+
+.home-content .text-2 span {
+  color: #fff;
+}
+
+.showcase {
+  background: url(../assets/images/img/showcase.jpg) no-repeat 0 -100px;
+  height: 600px;
+  padding: 30px 0;
+}
+
+.showcase h1 {
+  font-size: 60px;
+}
+
+.showcase .container {
+  background: #fff;
+  opacity: 0.8;
+  padding: 20px 30px 30px 30px;
+}
+
+.title-bar {
+  background: url(../assets/images/img/showcase.jpg) no-repeat 0 -300px;
+  border-bottom: 4px solid #1a8c97;
+}
+
+.title-bar h1 {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.main {
+  margin: 2.5rem 0;
+}
+
+.section-a {
+  padding: 30px 0;
+  text-align: center;
+  background: #1a8c97;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.section-a .fa {
+  font-size: 60px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card-title {
+  margin: 0.5rem;
+}
+
+.footer {
+  width: 100vw;
+  padding: 2rem;
+  margin-top: auto;
+  background-color: #717469;
+}
+
+.footer .btn-link {
+  color: #fff;
+}
+
+.footer p {
+  color: #fff;
+  margin-top: 1rem 0;
+}
+/*# sourceMappingURL=style.css.map */

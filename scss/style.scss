@@ -1,0 +1,121 @@
+@import './mixin';
+@import './font';
+@import './color';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+// .img_avatar {
+//     border-radius: 50%;
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     -ms-border-radius: 50%;
+//     -o-border-radius: 50%;
+//     height: 35%;
+//     width: 35%;
+//     transform: translate(-50%, -50%);
+//     top: 50%;
+//     left: 50%;
+// }
+// video {
+//     object-fit: cover;
+//     position: fixed;
+//     top: 55px;
+//     overflow-x: hidden;
+//     min-width: 100%;
+//     min-height: 100%;
+//     z-index: -999;
+// }
+.home-content {
+    @include center;
+    text-align: center;
+    & .text-1 {
+        line-height: 4rem;
+        @include font(4rem, 600);
+        & span {
+            &::after {
+                content: " Yashita";
+            }
+            // color: $crimson;
+        }
+    }
+    & .text-2 {
+        @include font(1.4rem, 600);
+        margin-top: 1rem;
+        color: $black;
+        & span {
+            color: $white;
+        }
+    }
+}
+
+.showcase {
+    background: url(../assets/images/img/showcase.jpg) no-repeat 0 -100px;
+    height: 600px;
+    padding: 30px 0;
+    h1 {
+        font-size: 60px;
+    }
+    .container {
+        background: #fff;
+        opacity: 0.8;
+        padding: 20px 30px 30px 30px;
+    }
+}
+
+.title-bar {
+    background: url(../assets/images/img/showcase.jpg) no-repeat 0 -300px;
+    border-bottom: 4px solid $blue;
+    & h1 {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.main {
+    margin: 2.5rem 0;
+}
+
+.section-a {
+    padding: 30px 0;
+    text-align: center;
+    background: $blue;
+    color: $white;
+    .fa {
+        font-size: $icon-size;
+    }
+    margin-bottom: 3rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.card-title {
+    margin: 0.5rem;
+}
+
+.footer {
+    width: 100vw;
+    padding: 2rem;
+    margin-top: auto;
+    background-color: $bg-color;
+    & .btn-link {
+        color: $white;
+    }
+    & p {
+        color: $white;
+        margin-top: 1rem 0;
+    }
+}
